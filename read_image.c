@@ -8,6 +8,28 @@
 
 int main(int argc, char *argv[])
 {
+	//create index, file which contain histogram for one picture
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
   int i,j,n,nx,ny,nb;
   CIMAGE cim;
   /*------------------------------------------------*/
