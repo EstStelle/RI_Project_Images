@@ -1,0 +1,5 @@
+pour trier le tableau des distance entre histogrammes
+ =>qsort(tab, n, sizeof(KEY), keyCompare)
+	|KEY est une structure de donnée fournit par proc.h
+	|keyCompare fonction par proc.c
+	|qsort fonction fournit par C
