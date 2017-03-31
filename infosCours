@@ -1,5 +1,15 @@
+******************************************************************************************************
+*												     *
+*					TP RI Projet Image 2017					     *
+*												     *
+******************************************************************************************************
+
+
+=====Séance du 24 Mars=====
 pour trier le tableau des distance entre histogrammes
  =>qsort(tab, n, sizeof(KEY), keyCompare)
 	|KEY est une structure de donnée fournit par proc.h
 	|keyCompare fonction par proc.c
 	|qsort fonction fournit par C
+
+(d(u,v))2 = Somme(ui - vi)2
