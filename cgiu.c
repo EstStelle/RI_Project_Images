@@ -113,6 +113,7 @@ char *get_query_string(int argc, char *argv[])
     int l,cl;
     char *qs,*rqm,*tmp;
     if ((rqm = getenv("REQUEST_METHOD")) == NULL) {
+    	printf("on est if 1\n");
         qs = NULL;
         cl = 0;
         for (l = 1; l < argc; l++) {
@@ -125,13 +126,16 @@ char *get_query_string(int argc, char *argv[])
             free(tmp);
         }
     } else if (!strcmp(rqm,"GET")) {
+    	printf("on est if 2\n");
         qs = getenv("QUERY_STRING");
     } else if (!strcmp(rqm,"POST")) {
+    	printf("on est if 3\n");
         cl = atoi(getenv("CONTENT_LENGTH"));
         qs = (char *) malloc(sizeof(char) * (cl+1));
         for (l = 0; (l < cl) && (!feof(stdin)); l++) qs[l] = (char) fgetc(stdin);
         qs[l] = 0;
     } else {
+    	printf("on est if 4\n");
         print_html_head("Request method error");
         printf("This script should be referenced with a METHOD of POST or GET.\n");
         printf("If you don't understand this, see this ");

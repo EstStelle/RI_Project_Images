@@ -13,3 +13,30 @@ pour trier le tableau des distance entre histogrammes
 	|qsort fonction fournit par C
 
 (d(u,v))2 = Somme(ui - vi)2
+
+
+=====Séance du 31 Mars=====
+on commence les histogramme sift
+récuperer l'archive qui continet tous les points sift créer
+3 lignes entete
+puis 1 lignes par sift (descripteur)
+=> 5 val mais on s'en bat les coui**es
+=> 128 vals ce sont
+ espace à 128 dimensions représenté par des points
+
+1.clustering : trouver les centres
+	-on découpe en part égale 
+	-on calcule les centroides
+	-on en prend un sur 150 (total = 256)
+
+parcourir l'ensemble des fichiers .sift prendre qqs points 
+
+
+2.mapping : 
+	fusion tte les img de la collection img par img 
+	-les centres sont numérotés trouvé le centre le plus proche
+	-donner echantillon a R et il fait une moyenne -> 1nn
+	-faire un vecteur de 256 cases et faire +1 sur le vecteur au 1nn (1<=1nn<=256) associé
+
+3.histogramming
+	-sur 256 categories -> descripteur
